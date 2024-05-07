@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Cabin, sans-serif;
+}
+
+.logo-font {
+    font-family: 'Beth Ellen', cursive;
+    margin: 0.2rem 1rem;
+    color: #0e0e0e;
+}
+
+.hint {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff !important;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hint-info {
+    background-color: #19535F !important;
+}
+
+.hint-info-2 {
+    background-color: #D36582 !important;
+}
+
+/* top navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #D9D9D9;
+}
+
+.logo {
+    height: 50px;
+}
+
+.profile-pic {
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+}
+
+#home-icon {
+    font-size: 2rem;
+
+}
+
+#calendar-icon, #club-icon {
+    font-size: 1.5rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* home */
+
+.home-container {
+    background-image: url("./img/home.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1rem 1rem 1rem 1rem;
+    font-weight: normal;
+}
+
+/* login */
+
+.login-title {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+}
+
+.login-container {
+    background-color: white;
+    padding: 3rem 1rem 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    filter: opacity(0.85);
+    width: 85%;
+}
+
+.rounded-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    background-color: #D9D9D9;
+}
+
+#google-login-button {
+    background-color: #051312;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 79%;
+    margin: 1rem 0;
+}
+
+#join-club-button, #login-button, #register-button, #create-profile-button {
+    padding: 0.6rem;
+    width: 100%;
+    margin: 0.5em 0 1rem 0;
+    background-color: #051312;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* create profile */
+
+.profile-background {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.99) 0%, rgba(153, 14, 14, 0.99) 100%);
+    color: #fff;
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.create-profile-backdrop {
+    height: 20vh;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    width: 100%;
+    background-size: cover;
+    filter: blur(0.2rem);
+}
+
+.fade-img {
+    position: relative;
+}
+
+.fade-img:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 5vh;
+}
+
+.create-profile-avatar {
+    width: 25%;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid #fff;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 10vh;
+    transform: translate(-50%, 1vh);
+}
+
+.create-profile-label, .create-profile-input {
+    display: block;
+}
+
+.create-profile-label {
+    margin-bottom: 1rem;
+}
+
+.create-profile-favourite-films {
+    padding: 0.1rem;
+}
+
+.create-profile-favourite-films p {
+    color: #000;
+    margin: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+/* dashboard */
+
+.create-club-button {
+    background-color: #051312;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    width: 80vw;
+    justify-content: center;
+    margin: 1.5rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.join-club-card {
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    width: 80vw;
+    margin: 1rem 0;
+    text-align: center;
+    filter: opacity(0.85);
+}
+
+.dashboard-container {
+    background-image: linear-gradient(to bottom, #0e0e0e, #460000);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint-club {
+    font-size: 0.9rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    filter: opacity(0.85);
+}
+
+.user-card {
+    position: relative;
+    width: 18.75rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("./img/card.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+.profile-pic-card {
+    position: absolute;
+    top: 8rem;
+    right: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.membership-card-title {
+    position: absolute;
+    top: 0.015rem;
+    color: #5e5e5e;
+
+}
+
+.user-info {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+
+.club-card {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 80vw;
+    position: relative;
+    background-size: cover;
+    margin: 1.5rem 0;
+    color: #fff;
+}
+
+.club-card-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+
+/* create club */
+
+.club-logo {
+    margin: 1rem;
+    width: 5rem;
+    border-radius: 50%;
+    font-weight: normal;
+}
+
+.round-button {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 3rem;
+    height: 1rem;
+    margin: 1rem 0.8rem;
+}
+
+/* club */
+
+.navbar-club {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #D9D9D9;
+    width: 100%;
+}
+
+.navbar-club ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-club li {
+    float: left;
+}
+
+.navbar-club li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* rounds */
+
+.round-card {
+    border-radius: 3px;
+    background: #f1f1f1;
+    padding: 1rem;
+    width: 90vw;
+    position: relative;
+    background-size: cover;
+    margin: 1.5rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes roulette {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.animated-text {
+    animation: roulette 2s ease-in-out;
+}
+
+/* footer */
+
+.footer {
+    background-color: #D9D9D9;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+
